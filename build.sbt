@@ -1,8 +1,10 @@
 import bintray.{ Keys => BintrayKeys }
+import sbtrelease.ReleasePlugin.ReleaseKeys
 
 organization := "markschaake"
 name := "markschaake-sbt-plugins"
 scalaVersion := "2.10.4"
+//crossScalaVersions := Seq("2.10.4", "2.11.2")
 sbtPlugin := true
 scalacOptions ++= Seq("-target:jvm-1.7", "-Xlint", "-deprecation", "-feature")
 
@@ -12,6 +14,7 @@ publishMavenStyle := false
 licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html"))
 
 releaseSettings
+//ReleaseKeys.crossBuild := true
 bintrayPublishSettings
 
 BintrayKeys.repository in BintrayKeys.bintray := "sbt-plugins"

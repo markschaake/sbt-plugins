@@ -13,7 +13,8 @@ object WebServicePlugin extends AutoPlugin {
     Seq(
       resolvers += "spray repo" at "http://repo.spray.io",
       libraryDependencies ++= Seq(
-        "io.spray" %% "spray-routing" % "1.3.2"
+        "com.typesafe.akka" %% "akka-stream-experimental" % "1.0-M1",
+        "com.typesafe.akka" % "akka-http-core-experimental" % "1.0-M1"
       )
     )
   }
