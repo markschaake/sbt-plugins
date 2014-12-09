@@ -14,7 +14,7 @@ object WebServicePlugin extends AutoPlugin {
       resolvers += "spray repo" at "http://repo.spray.io",
       libraryDependencies ++= Seq(
         "com.typesafe.akka" %% "akka-stream-experimental" % "1.0-M1",
-        "com.typesafe.akka" % "akka-http-core-experimental" % "1.0-M1"
+        "com.typesafe.akka" %% "akka-http-core-experimental" % "1.0-M1"
       )
     )
   }
